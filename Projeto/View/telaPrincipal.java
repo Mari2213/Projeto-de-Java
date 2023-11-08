@@ -6,7 +6,6 @@ package Projeto.View;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import Projeto.View.telaLogin;
 
 /**
  *
