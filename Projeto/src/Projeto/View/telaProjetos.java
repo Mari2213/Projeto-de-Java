@@ -328,7 +328,7 @@ public class telaProjetos extends JFrame{
 
             document.open();
 
-            Image img = Image.getInstance("C:\\Users\\User\\Documents\\Java teste\\src\\Projeto\\Img\\logo3.png");
+            Image img = Image.getInstance("C:\\Users\\User\\Documents\\Projeto Java\\src\\Projeto\\Img\\logo3.png");
             img.setAlignment(Element.ALIGN_CENTER);
             img.scaleToFit(200,200);
             document.add(img);
@@ -356,6 +356,7 @@ public class telaProjetos extends JFrame{
 
             // Populando o relatório em PDF
             MainProjetoDAO Desc = new MainProjetoDAO();
+            int count = 0;
 
             for (Projeto p : Desc.readForDesc(textBuscar.getText())){
 
@@ -364,9 +365,14 @@ public class telaProjetos extends JFrame{
                 table.addCell(new Phrase(p.getCampus(), fontCell));
                 table.addCell(new Phrase(p.getTitulo(), fontCell));
                 table.addCell(new Phrase(p.getEstudante(), fontCell));
+
+                count++;
             }
 
             document.add(table);
+
+            Font fontCountRel = new Font(Font.FontFamily.HELVETICA, 14, Font.NORMAL, BaseColor.BLACK);
+            document.add(new Paragraph("Quantidade de relatórios gerados: "+count, fontCountRel));
         }catch (DocumentException | IOException e){
             e.printStackTrace();
         }finally {

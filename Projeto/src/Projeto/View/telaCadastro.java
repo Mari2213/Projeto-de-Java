@@ -43,8 +43,6 @@ public class telaCadastro extends JFrame {
 
                     limparCampos();
 
-                    dispose();
-
                 }else {
                     JOptionPane.showMessageDialog(null, "Preencha os campos!");
                 }

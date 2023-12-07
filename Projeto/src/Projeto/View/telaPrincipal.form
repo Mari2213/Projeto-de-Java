@@ -22,14 +22,18 @@
                 <preferred-size width="150" height="-1"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <font name="Arial" size="16" style="0"/>
+              <foreground color="-16777216"/>
+            </properties>
           </component>
           <component id="6c307" class="javax.swing.JLabel" binding="lbUser">
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <font name="Arial" size="12" style="1"/>
+              <font name="Arial" size="16" style="1"/>
+              <foreground color="-16777216"/>
               <text value="User:"/>
             </properties>
           </component>
@@ -38,7 +42,8 @@
               <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <font name="Arial" size="12" style="1"/>
+              <font name="Arial" size="16" style="1"/>
+              <foreground color="-16777216"/>
               <text value="Data:"/>
             </properties>
           </component>
@@ -48,7 +53,10 @@
                 <preferred-size width="150" height="-1"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <font name="Arial" size="16" style="0"/>
+              <foreground color="-16777216"/>
+            </properties>
           </component>
         </children>
       </grid>
